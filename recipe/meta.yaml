@@ -1,5 +1,5 @@
 {% set name = "wagtail-footnotes" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wagtail_footnotes-{{ version }}.tar.gz
-  sha256: 6a01851915641047bb9a9b2c06ca38688b0cee43e932cb4fd59e1f4373fe4d04
+  sha256: 6355b396799537154b9c8bbaa54a800d82f58b345f87e987b32693f92d9c3f9d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - wagtail >=5.2
-    - django >=3.2
+    - wagtail >=6.3
+    - django >=4.2
 
 test:
   imports:
