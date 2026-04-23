@@ -1,5 +1,5 @@
 {% set name = "wagtail-footnotes" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wagtail_footnotes-{{ version }}.tar.gz
-  sha256: 6355b396799537154b9c8bbaa54a800d82f58b345f87e987b32693f92d9c3f9d
+  sha256: be37c78598d3a40f6f2b5a6b291c2733e41441d9fceb24f1c5ddf1f481a7847e
 
 build:
   noarch: python
